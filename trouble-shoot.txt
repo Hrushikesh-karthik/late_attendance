@@ -1,0 +1,11 @@
+pip install --upgrade pip setuptools wheel build
+or
+pip install setuptools==68.2.2
+
+🔧 Optional Fix: Modify Problematic Package
+If the issue is caused by a specific package (e.g., mysqlclient), and you’re not using it directly (since you already have PyMySQL), remove or comment out this line in requirements.txt:
+
+txt
+Copy code
+# mysqlclient==2.1.0
+Then rerun the install.
